@@ -3,63 +3,123 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Student Portfolio</title>
+      <title>Arl Dominyq A. Frani | Portfolio</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="style.css">
    </head>
    <body>
-      <header>
-         <h1 id="name">Arl Dominyq A. Frani</h1>
-         <img src="Image.png" alt="Profile Picture" id="profile-img">
-         <p id="course-year">Computer Science - 2nd Year</p>
-         <button id="theme-toggle">Switch Theme</button>
-      </header>
-      <section id="Education">
-         <h2>Education</h2>
-         <ul>
-            <li>2024-2027 Mapua Malayan Colleges of Mindanao<br>Bachelor of Computer Science</li>
-         </ul>
-      <section id="achievements">
-         <h2>Achievements/Certifications</h2>
-         <ul>
-            <li>Certiport IT Specialist - Java </li>
-            <li>C++ Lab: Crafting Code in the Digital Age Workshop.2</li>
-            <li>Completed Visual Studio Code Workshop</li>
-         </ul>
-      </section>
-      <section id="projects">
-         <h2>Previous Projects</h2>
-         <ul>
-            <li>Project Dear of Mine/Kalinga ng Alaala - Game that helps Alzheimer's CareGivers</li>
-            <li>Gastos App in C++ - Expense Tracker</li>
-            <li>Project 3</li>
-         </ul>
-         <section id="languages">
-         <h2>Languages</h2>
-         <ul>
-            <li>Filipino - Mother Tongue</li>
-            <li>English - Proficient</li>
-            <li>Japanese - Basic</li>
-         </ul>
-      </section>
-         <section id="link">
-         <h2>Contact Info</h2>
-         <ul>
-            <li>+63 954 388 4997</li>
-            <li>adFrani.mcm.edu.ph</li>
-            <li>LinkedIn<br>Arl Dominyq Frani<br><a href="https://www.linkedin.com/in/arl-dominyq-frani-42324b328">www.linkedin.com/in/arl-dominyq-frani-42324b328</a></li>
-         </ul>
-      </section>
-         <section>
-            <h2>Course Assessments</h2>
-            <ul>
-            <li><a href="https://yff1e.github.io/strokesense-landingpage/">StrokeSense Landing Page</a></li>
-            <li><a href="https://yff1e.github.io/M1-FA3-client-side-JavaScript/">Client Side JavaScript</a></li>
-            <li><a href="https://frani-webapp-demo.vercel.app">Tailwind CSS Tutorial Site</a></li>  
-            <li><a href="https://moviedbfrani-m1exam-part3.vercel.app">Movie DB Part 3 Exam</a></li> 
-            </ul>
-         </section>
-      </section>
-      
+      <div class="page-shell">
+         <aside class="sidebar">
+            <div class="sidebar__brand">
+               <p class="sidebar__eyebrow">Portfolio</p>
+               <h1>Arl Dominyq A. Frani</h1>
+               <p class="sidebar__role">Computer Science Student</p>
+            </div>
+
+            <nav class="sidebar__nav" aria-label="Section navigation">
+               <a href="#home" class="nav-link active">Home</a>
+               <a href="#education" class="nav-link">Education</a>
+               <a href="#achievements" class="nav-link">Achievements</a>
+               <a href="#projects" class="nav-link">Projects</a>
+               <a href="#assessments" class="nav-link">Assessments</a>
+               <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch theme">
+               Switch Theme
+            </button>
+         </aside>
+
+         <main class="content">
+            <section class="hero" id="home">
+               <div class="hero__card">
+                  <div class="hero__photo-wrap">
+                     <img src="Image.png" alt="Arl Dominyq A. Frani" id="profile-img">
+                  </div>
+                  <p class="hero__eyebrow">Student Portfolio</p>
+                  <h2>Building practical web and software projects with a clear focus on usability.</h2>
+                  <p class="hero__intro">
+                     I am a 2nd year Computer Science student at Mapua Malayan Colleges of Mindanao,
+                     working on web interfaces, academic builds, and small software projects that turn
+                     coursework into usable products.
+                  </p>
+                  <div class="hero__meta">
+                     <span>Computer Science - 2nd Year</span>
+                     <span>MMCM</span>
+                  </div>
+               </div>
+            </section>
+
+            <section class="section-grid" aria-label="Portfolio details">
+               <article class="info-card" id="education">
+                  <p class="card-label">Education</p>
+                  <h3>Academic Background</h3>
+                  <ul class="detail-list">
+                     <li>
+                        <strong>Mapua Malayan Colleges of Mindanao</strong>
+                        <span>2024-2027</span>
+                        <p>Bachelor of Computer Science</p>
+                     </li>
+                  </ul>
+               </article>
+
+               <article class="info-card" id="achievements">
+                  <p class="card-label">Achievements</p>
+                  <h3>Certifications and Workshops</h3>
+                  <ul class="detail-list compact-list">
+                     <li>Certiport IT Specialist - Java</li>
+                     <li>C++ Lab: Crafting Code in the Digital Age Workshop</li>
+                     <li>Completed Visual Studio Code Workshop</li>
+                  </ul>
+               </article>
+
+               <article class="info-card" id="projects">
+                  <p class="card-label">Projects</p>
+                  <h3>Previous Work</h3>
+                  <ul class="detail-list compact-list">
+                     <li>Dear of Mine / Kalinga ng Alaala - a game built to help Alzheimer's caregivers</li>
+                     <li>Gastos App in C++ - expense tracker application</li>
+                     <li>Course projects focused on frontend development and interactive UI builds</li>
+                  </ul>
+               </article>
+
+               <article class="info-card" id="assessments">
+                  <p class="card-label">Assessments</p>
+                  <h3>Course Assessments and Latest Build</h3>
+                  <div class="link-stack">
+                     <a href="https://lawlens-delta.vercel.app" target="_blank" rel="noreferrer">My Newest Project - LawLens</a>
+                     <a href="https://yff1e.github.io/strokesense-landingpage/" target="_blank" rel="noreferrer">StrokeSense Landing Page</a>
+                     <a href="https://yff1e.github.io/M1-FA3-client-side-JavaScript/" target="_blank" rel="noreferrer">Client Side JavaScript</a>
+                     <a href="https://frani-webapp-demo.vercel.app" target="_blank" rel="noreferrer">Tailwind CSS Tutorial Site</a>
+                     <a href="https://moviedbfrani-m1exam-part3.vercel.app" target="_blank" rel="noreferrer">Movie DB Part 3 Exam</a>
+                  </div>
+               </article>
+
+               <article class="info-card" id="languages">
+                  <p class="card-label">Languages</p>
+                  <h3>Communication</h3>
+                  <ul class="detail-list compact-list">
+                     <li>Filipino - Mother Tongue</li>
+                     <li>English - Proficient</li>
+                     <li>Japanese - Basic</li>
+                  </ul>
+               </article>
+
+               <article class="info-card" id="contact">
+                  <p class="card-label">Contact</p>
+                  <h3>Get in Touch</h3>
+                  <div class="contact-list">
+                     <p><strong>Phone:</strong> +63 954 388 4997</p>
+                     <p><strong>Email:</strong> adFrani.mcm.edu.ph</p>
+                     <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/arl-dominyq-frani-42324b328" target="_blank" rel="noreferrer">arl-dominyq-frani-42324b328</a></p>
+                  </div>
+               </article>
+            </section>
+         </main>
+      </div>
+
       <script src="script.js"></script>
    </body>
 </html>
