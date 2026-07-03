@@ -390,14 +390,19 @@ a {
 
 .showcase__gallery {
 	display: grid;
-	grid-template-columns: repeat(3, minmax(0, 1fr));
+	grid-template-columns: repeat(3, 1fr);
 	gap: 1rem;
+	justify-items: center;
 }
 
 .showcase__gallery img {
 	width: 100%;
-	height: 260px;
-	object-fit: cover;
+	max-width: 260px;      /* phone width */
+	height: 520px;         /* phone height */
+	object-fit: contain;   /* don't crop */
+	object-position: center;
+	margin: 0 auto;
+	padding: 8px;
 	border-radius: 16px;
 	border: 1px solid var(--border);
 	background: var(--bg);
@@ -418,11 +423,15 @@ a {
 }
 
 .award img {
-	width: 260px;
+	width: 340px;          /* was 260px */
 	max-width: 100%;
+	height: auto;
 	border-radius: 16px;
 	border: 1px solid var(--border);
 	box-shadow: 0 14px 30px rgba(18, 45, 51, 0.18);
+	object-fit: contain;
+	flex-shrink: 0;
+	width: 380px;
 }
 
 .award__text {
